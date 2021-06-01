@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/relatorioGeralConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5052083" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?attr/colorButtonNormal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/estatisticasAvatar2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/ic_circle_solid"
+                android:backgroundTint="@color/colorPrimary"
+                android:contentDescription="Avatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:tint="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="@+id/estatisticasAvatar2"
+                app:layout_constraintEnd_toEndOf="@+id/estatisticasAvatar2"
+                app:layout_constraintStart_toStartOf="@+id/estatisticasAvatar2"
+                app:layout_constraintTop_toTopOf="@+id/estatisticasAvatar2"
+                app:srcCompat="@drawable/ic_poll_black_24dp" />
+
+            <TextView
+                android:id="@+id/relatorioGeralPeriodo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="__/__/__ a __/__/__"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estatisticasAvatar2" />
+
+            <TextView
+                android:id="@+id/estatisticasLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Estatísticas"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relatorioGeralPeriodo" />
+
+            <ImageView
+                android:id="@+id/estViagAvatar3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_circle_solid"
+                android:backgroundTint="@color/viagem"
+                android:contentDescription="Avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estatisticasLabel2" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="@+id/estViagAvatar3"
+                app:layout_constraintEnd_toEndOf="@+id/estViagAvatar3"
+                app:layout_constraintStart_toStartOf="@+id/estViagAvatar3"
+                app:layout_constraintTop_toTopOf="@+id/estViagAvatar3"
+                app:srcCompat="@drawable/ic_deslocamento" />
+
+            <TextView
+                android:id="@+id/est2linhasViagem3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:text="7 Viagens\n80 Km"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintStart_toEndOf="@+id/estViagAvatar3"
+                app:layout_constraintTop_toTopOf="@+id/estViagAvatar3" />
+
+            <ImageView
+                android:id="@+id/estatGasolinaAvt3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_circle_solid"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:contentDescription="Avatar"
+                app:layout_constraintStart_toStartOf="@+id/guideline9"
+                app:layout_constraintTop_toBottomOf="@+id/estatisticasLabel2" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="@+id/estatGasolinaAvt3"
+                app:layout_constraintEnd_toEndOf="@+id/estatGasolinaAvt3"
+                app:layout_constraintStart_toStartOf="@+id/estatGasolinaAvt3"
+                app:layout_constraintTop_toTopOf="@+id/estatGasolinaAvt3"
+                app:srcCompat="@drawable/ic_despesa" />
+
+            <TextView
+                android:id="@+id/est2LinhasGastos5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:text="2 serviços\nR$ 150,00"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/estatGasolinaAvt3"
+                app:layout_constraintTop_toTopOf="@+id/estatGasolinaAvt3" />
+
+            <TextView
+                android:id="@+id/totalDeViagens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Total de Viagens"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estViagAvatar3" />
+
+            <ImageView
+                android:id="@+id/graphViagensParticular"
+                android:layout_width="50dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalDeViagens"
+                app:srcCompat="@color/particular" />
+
+            <ImageView
+                android:id="@+id/graphViagensAlugado"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                app:layout_constraintStart_toEndOf="@+id/graphViagensParticular"
+                app:layout_constraintTop_toTopOf="@+id/graphViagensParticular"
+                app:srcCompat="@color/alugado" />
+
+            <ImageView
+                android:id="@+id/graphViagensPublico"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                app:layout_constraintStart_toEndOf="@+id/graphViagensAlugado"
+                app:layout_constraintTop_toTopOf="@+id/graphViagensAlugado"
+                app:srcCompat="@color/publico" />
+
+            <ImageView
+                android:id="@+id/graphViagensCompartilhado"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                app:layout_constraintStart_toEndOf="@+id/graphViagensPublico"
+                app:layout_constraintTop_toTopOf="@+id/graphViagensPublico"
+                app:srcCompat="@color/compartilhado" />
+
+            <TextView
+                android:id="@+id/totalDeGastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Total de Gastos"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/particularPorcentV" />
+
+            <ImageView
+                android:id="@+id/graphGastosParticular"
+                android:layout_width="50dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/totalDeGastos"
+                app:srcCompat="@color/particular" />
+
+            <ImageView
+                android:id="@+id/graphGastosAlugado"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                app:layout_constraintStart_toEndOf="@+id/graphGastosParticular"
+                app:layout_constraintTop_toTopOf="@+id/graphGastosParticular"
+                app:srcCompat="@color/alugado" />
+
+            <ImageView
+                android:id="@+id/graphGastosPublico"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                app:layout_constraintStart_toEndOf="@+id/graphGastosAlugado"
+                app:layout_constraintTop_toTopOf="@+id/graphGastosAlugado"
+                app:srcCompat="@color/publico" />
+
+            <ImageView
+                android:id="@+id/graphGastosCompartilhado"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                app:layout_constraintStart_toEndOf="@+id/graphGastosPublico"
+                app:layout_constraintTop_toTopOf="@+id/graphGastosPublico"
+                app:srcCompat="@color/compartilhado" />
+
+            <ImageView
+                android:id="@+id/legParticular"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/particularPorcentG"
+                app:srcCompat="@color/particular" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="Particular"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/legParticular"
+                app:layout_constraintTop_toTopOf="@+id/legParticular" />
+
+            <ImageView
+                android:id="@+id/legAlugado"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/textView2"
+                app:srcCompat="@color/alugado" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="Alugado"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/legAlugado"
+                app:layout_constraintTop_toTopOf="@+id/legAlugado" />
+
+            <ImageView
+                android:id="@+id/legPublico"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="@+id/textView3"
+                app:srcCompat="@color/publico" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="Público"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/legPublico"
+                app:layout_constraintTop_toTopOf="@+id/legPublico" />
+
+            <ImageView
+                android:id="@+id/legCompartilhado"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toTopOf="@+id/textView4"
+                app:srcCompat="@color/compartilhado" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="Compartilhado"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/legCompartilhado"
+                app:layout_constraintTop_toTopOf="@+id/legCompartilhado" />
+
+            <TextView
+                android:id="@+id/particularPorcentV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="10%"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/graphViagensAlugado"
+                app:layout_constraintStart_toStartOf="@+id/graphViagensParticular"
+                app:layout_constraintTop_toBottomOf="@+id/graphViagensParticular" />
+
+            <TextView
+                android:id="@+id/alugadoPorcentV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="10%"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/graphViagensPublico"
+                app:layout_constraintStart_toStartOf="@+id/graphViagensAlugado"
+                app:layout_constraintTop_toBottomOf="@+id/graphViagensAlugado" />
+
+            <TextView
+                android:id="@+id/publicoPorcentV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="10%"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/graphViagensCompartilhado"
+                app:layout_constraintStart_toStartOf="@+id/graphViagensPublico"
+                app:layout_constraintTop_toBottomOf="@+id/graphViagensPublico" />
+
+            <TextView
+                android:id="@+id/compartilhadoPorcentV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="10%"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/graphViagensCompartilhado"
+                app:layout_constraintStart_toStartOf="@+id/graphViagensCompartilhado"
+                app:layout_constraintTop_toBottomOf="@+id/graphViagensCompartilhado" />
+
+            <TextView
+                android:id="@+id/particularPorcentG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="10%"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/graphGastosAlugado"
+                app:layout_constraintStart_toStartOf="@+id/graphGastosParticular"
+                app:layout_constraintTop_toBottomOf="@+id/graphGastosParticular" />
+
+            <TextView
+                android:id="@+id/alugadoPorcentoG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="10%"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/graphGastosPublico"
+                app:layout_constraintStart_toStartOf="@+id/graphGastosAlugado"
+                app:layout_constraintTop_toBottomOf="@+id/graphGastosAlugado" />
+
+            <TextView
+                android:id="@+id/compartilhadoPorcentoG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="10%"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/graphGastosCompartilhado"
+                app:layout_constraintStart_toStartOf="@+id/graphGastosCompartilhado"
+                app:layout_constraintTop_toBottomOf="@+id/graphGastosCompartilhado" />
+
+            <TextView
+                android:id="@+id/publicoPorcentG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="10%"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toStartOf="@+id/graphGastosCompartilhado"
+                app:layout_constraintStart_toStartOf="@+id/graphGastosPublico"
+                app:layout_constraintTop_toBottomOf="@+id/graphGastosPublico" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Início" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_transportes"
+            android:icon="@drawable/ic_meio_de_transporte"
+            android:title="Meus Meios de Transporte" />
+        <item
+            android:id="@+id/nav_servicos"
+            android:icon="@drawable/ic_eventos"
+            android:title="Viagens e Serviços" />
+        <item
+            android:id="@+id/nav_estatisticas"
+            android:icon="@drawable/ic_relatorios"
+            android:title="Estatísticas" />
+        <item
+            android:id="@+id/nav_contatos"
+            android:icon="@drawable/ic_contato"
+            android:title="Contato" />
+        <item
+            android:id="@+id/nav_localizacao"
+            android:icon="@drawable/ic_localizacao"
+            android:title="Localização" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@drawable/ic_close"
+            android:title="Sair" />
+    </group>
+
+</menu>

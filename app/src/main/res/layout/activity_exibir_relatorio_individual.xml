@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/relatorioConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5052083" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?attr/colorButtonNormal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/estatisticasAvatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ic_circle_solid"
+                android:backgroundTint="@color/particular"
+                android:contentDescription="Avatar"
+                app:layout_constraintEnd_toEndOf="@+id/view9"
+                app:layout_constraintStart_toStartOf="@+id/view9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:tint="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="@+id/estatisticasAvatar"
+                app:layout_constraintEnd_toEndOf="@+id/estatisticasAvatar"
+                app:layout_constraintStart_toStartOf="@+id/estatisticasAvatar"
+                app:layout_constraintTop_toTopOf="@+id/estatisticasAvatar"
+                app:srcCompat="@drawable/ic_meio_de_transporte" />
+
+            <TextView
+                android:id="@+id/relatorioIndividualPeriodo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="__/__/__ a __/__/__"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estatisticasAvatar" />
+
+            <TextView
+                android:id="@+id/estatVeicLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                android:text="Veículo"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relatorioIndividualPeriodo" />
+
+            <TextView
+                android:id="@+id/estatCategoriaLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Categoria"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/estatVeicLabel"
+                app:layout_constraintTop_toBottomOf="@+id/relatorioIndividualPeriodo" />
+
+            <TextView
+                android:id="@+id/estatIndivVeicNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:text="Carro"
+                app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estatVeicLabel" />
+
+            <TextView
+                android:id="@+id/estatIndivVeicCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Categoria"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline8"
+                app:layout_constraintTop_toBottomOf="@+id/estatCategoriaLabel" />
+
+            <TextView
+                android:id="@+id/estatisticasLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Estatísticas"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estatIndivVeicNome" />
+
+            <ImageView
+                android:id="@+id/estViagAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_circle_solid"
+                android:backgroundTint="@color/viagem"
+                android:contentDescription="Avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estatisticasLabel" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="@+id/estViagAvatar"
+                app:layout_constraintEnd_toEndOf="@+id/estViagAvatar"
+                app:layout_constraintStart_toStartOf="@+id/estViagAvatar"
+                app:layout_constraintTop_toTopOf="@+id/estViagAvatar"
+                app:srcCompat="@drawable/ic_deslocamento" />
+
+            <TextView
+                android:id="@+id/est2linhasViagem"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:text="7 viagens\n80 Km"
+                app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                app:layout_constraintStart_toEndOf="@+id/estViagAvatar"
+                app:layout_constraintTop_toTopOf="@+id/estViagAvatar" />
+
+            <ImageView
+                android:id="@+id/estGastAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_circle_solid"
+                android:backgroundTint="@color/despesa"
+                android:contentDescription="Avatar"
+                app:layout_constraintStart_toEndOf="@+id/guideline8"
+                app:layout_constraintTop_toBottomOf="@+id/estatisticasLabel" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="@+id/estGastAvatar"
+                app:layout_constraintEnd_toEndOf="@+id/estGastAvatar"
+                app:layout_constraintStart_toStartOf="@+id/estGastAvatar"
+                app:layout_constraintTop_toTopOf="@+id/estGastAvatar"
+                app:srcCompat="@drawable/ic_despesa" />
+
+            <TextView
+                android:id="@+id/est2LinhasGastos"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:text="2 serviços\nR$ 150,00"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/estGastAvatar"
+                app:layout_constraintTop_toTopOf="@+id/estGastAvatar" />
+
+            <ImageView
+                android:id="@+id/estatGasolinaAvt"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_circle_solid"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:contentDescription="Avatar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estViagAvatar" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="@+id/estatGasolinaAvt"
+                app:layout_constraintEnd_toEndOf="@+id/estatGasolinaAvt"
+                app:layout_constraintStart_toStartOf="@+id/estatGasolinaAvt"
+                app:layout_constraintTop_toTopOf="@+id/estatGasolinaAvt"
+                app:srcCompat="@drawable/ic_local_gas_station_black_24dp" />
+
+            <TextView
+                android:id="@+id/est2LinhasGasolina"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:text="Combustível\nR$ 0,54 / Km"
+                app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                app:layout_constraintStart_toEndOf="@+id/estatGasolinaAvt"
+                app:layout_constraintTop_toTopOf="@+id/estatGasolinaAvt" />
+
+            <ImageView
+                android:id="@+id/estGastAvatar2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_circle_solid"
+                android:backgroundTint="@android:color/holo_purple"
+                android:contentDescription="Avatar"
+                app:layout_constraintStart_toEndOf="@+id/guideline8"
+                app:layout_constraintTop_toBottomOf="@+id/estGastAvatar" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@android:color/background_light"
+                app:layout_constraintBottom_toBottomOf="@+id/estGastAvatar2"
+                app:layout_constraintEnd_toEndOf="@+id/estGastAvatar2"
+                app:layout_constraintStart_toStartOf="@+id/estGastAvatar2"
+                app:layout_constraintTop_toTopOf="@+id/estGastAvatar2"
+                app:srcCompat="@drawable/ic_local_grocery_store_black_24dp" />
+
+            <TextView
+                android:id="@+id/est2LinhasGastos2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:text="Média de gastos\nR$ 14,00 / Km"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/estGastAvatar2"
+                app:layout_constraintTop_toTopOf="@+id/estGastAvatar2" />
+
+            <TextView
+                android:id="@+id/TotalDeViagens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Total de Viagens"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/estatGasolinaAvt" />
+
+            <ImageView
+                android:id="@+id/graphViagens"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TotalDeViagens"
+                app:srcCompat="@color/viagem" />
+
+            <TextView
+                android:id="@+id/textoGraphViagens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="15dp"
+                android:text="100% em relação a todos os meios de transporte."
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/graphViagens" />
+
+            <TextView
+                android:id="@+id/TotalDeGastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Total de Gastos"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textoGraphViagens" />
+
+            <ImageView
+                android:id="@+id/graphGastos"
+                android:layout_width="100dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TotalDeGastos"
+                app:srcCompat="@color/despesa" />
+
+            <TextView
+                android:id="@+id/textoGraphDespesas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="100% em relação a todos os meios de transporte."
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/graphGastos" />
+
+            <TextView
+                android:id="@+id/GastosPorCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Gastos por Categoria"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textoGraphDespesas" />
+
+            <TextView
+                android:id="@+id/listaDeGastos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="R$100,00 com combustível\nR$80,00 com oficina\nR$55,55 com revisão\nR$10,00 com pedágio\n"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/GastosPorCategoria" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

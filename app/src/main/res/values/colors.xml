@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#009688</color>
+    <color name="despesa">#e51c23</color>
+    <color name="viagem">#5af158</color>
+    <color name="publico">#03a9f4</color>
+    <color name="alugado">#8bc34a</color>
+    <color name="compartilhado">#ff5177</color>
+    <color name="particular">#ffeb3b</color>
+    <color name="azul_celeste">#007fff</color>
+    <color name="azul_celeste2">#87cefa</color>
+    <color name="azul_celeste3">#4169e1</color>
+</resources>

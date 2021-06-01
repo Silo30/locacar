@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="INTENT_ADD_TRANSPORTE">0</integer>
+    <integer name="INTENT_ADD_EVENTO">1</integer>
+    <integer name="SUCESS">3</integer>
+    <integer name="NO_SUCESS">4</integer>
+</resources>
